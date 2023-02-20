@@ -108,3 +108,55 @@ body {
   color: #cdcfd8;
   font-size: 18px;
 }
+
+.modal {
+  display: none;
+}
+
+.active {
+  padding: 30px 10px;
+  background-color: #191f28;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-title {
+  color: #cdcfd8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.modal-btn {
+  font-size: 17px;
+  padding: 12px 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #454858;
+  border: 1px solid #454858;
+  color: #cdcfd8;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.overlay-active {
+  display: block;
+}
