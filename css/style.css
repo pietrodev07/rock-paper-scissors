@@ -13,3 +13,16 @@ body {
   background-color: #1F2937;
   font-family: sans-serif;
 }
+
+.header {
+  background-color: #191f28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: #fdcc3b;
+  padding: 15px 0;
+}
