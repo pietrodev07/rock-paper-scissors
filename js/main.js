@@ -39,3 +39,41 @@ function getComputerChoice() {
 
   return computerChoice;
 }
+
+function playRound(computer, player) {
+
+  if(computer === player) {
+    wonLost.textContent = "It's a tie";
+    scoreMessage.textContent = `${capitalizeFirstLetter(playerChoice)} ties with ${computerChoice}`;
+  } else if(computer === "rock" && player === "scissors") {
+    computerScore += 1;
+    wonLost.textContent = "You lose!";
+    scoreMessage.textContent = `${capitalizeFirstLetter(playerChoice)} is beaten by ${computerChoice}`;
+  } else if(computer === "scissors" && player === "paper") {
+    computerScore += 1;
+    wonLost.textContent = "You lose!";
+    scoreMessage.textContent = `${capitalizeFirstLetter(playerChoice)} is beaten by ${computerChoice}`;
+  }  else if(computer === "paper" && player === "rock") {
+    computerScore += 1;
+    wonLost.textContent = "You lose!";
+    scoreMessage.textContent = `${capitalizeFirstLetter(playerChoice)} is beaten by ${computerChoice}`;
+  } else {
+    playerScore += 1;
+    wonLost.textContent = "You win!"
+    scoreMessage.textContent = `${capitalizeFirstLetter(playerChoice)} beats ${computerChoice}`;
+  }
+
+  setTexts();
+
+  return [computerScore, playerScore];
+
+}
+
+function setTexts() {
+  playerScoreText.textContent = playerScore.toString();
+  cpuScoreText.textContent = computerScore.toString();
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
+}
