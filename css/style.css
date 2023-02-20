@@ -26,3 +26,67 @@ body {
   color: #fdcc3b;
   padding: 15px 0;
 }
+
+.main {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.scoreboard {
+  margin-bottom: 20px;
+  color: #cdcfd8;
+}
+
+.won-lost {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.score-message {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.scores-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.score-box {
+  width: 170px;
+}
+
+.score {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.cpu, .player {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: #2a3241;
+  border: 1px solid #2a3241;
+  font-size: 70px;
+}
+
+.btn:hover {
+  background-color: #3b4054
+}
