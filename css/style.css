@@ -90,3 +90,21 @@ body {
 .btn:hover {
   background-color: #3b4054
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #cdcfd8;
+  font-size: 18px;
+}
