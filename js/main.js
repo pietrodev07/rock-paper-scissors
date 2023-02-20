@@ -77,3 +77,36 @@ function setTexts() {
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase()
 }
+
+function winner() {
+  if(playerScore === 6 || computerScore === 6) {
+    openModal();
+  }
+}
+
+function openModal() {
+  if(playerScore > computerScore) {
+    modalTitle.textContent = "You win!";
+  } else {
+    modalTitle.textContent = "You lose...";
+  }
+
+  modal.classList.add('active');
+  overlay.classList.add('overlay-active');
+}
+
+closeModalButton.addEventListener('click', () => {
+  closeModal();
+  resetAll();
+  setTexts();
+})
+
+function closeModal() {
+  modal.classList.remove('active');
+  overlay.classList.remove('overlay-active');
+}
+
+function resetAll() {
+  playerScore = 0;
+  computerScore = 0;
+}
