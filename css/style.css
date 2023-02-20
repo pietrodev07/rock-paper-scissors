@@ -160,3 +160,23 @@ body {
 .overlay-active {
   display: block;
 }
+
+@media (max-width: 550px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .won-lost, .score-message {
+    font-size: 18px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .btn {
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+  }
+}
