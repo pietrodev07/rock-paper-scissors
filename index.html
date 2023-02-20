@@ -14,6 +14,31 @@
     <h1>Rock - Paper - Scissors</h1>
   </header>
 
+  <main class="main">
+
+    <div class="scoreboard">
+      <h2 class="won-lost" id="won-lost">Choose your next move</h2>
+      <h3 class="score-message" id="score-message">First to score 6 points wins the game</h3>
+      <div class="scores-container">
+        <div class="score-box">
+          <div class="score" id="player-score">0</div>
+          <p class="player">You</p>
+        </div>
+        <div class="score-box">
+          <div class="score" id="cpu-score">0</div>
+          <p class="cpu">Computer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <button class="btn" id="rock-button" value="rock">&#129704;</button>
+      <button class="btn" id="paper-button" value="paper">&#128196</button>
+      <button class="btn" id="scissors-button" value="scissors">&#9986;&#65039;</button>
+    </div>
+
+  </main>
+
   <!-- JavaScript -->
   <script src="./js/main.js"></script>
 
