@@ -110,3 +110,24 @@ function resetAll() {
   playerScore = 0;
   computerScore = 0;
 }
+
+rockButton.addEventListener('click', (e) => {
+  playerChoice = e.currentTarget.value;
+  computerChoice = getComputerChoice();
+  playRound(computerChoice, playerChoice);
+  winner();
+})
+
+paperButton.addEventListener('click', (e) => {
+  playerChoice = e.currentTarget.value;
+  computerChoice = getComputerChoice();
+  playRound(computerChoice, playerChoice);
+  winner();
+})
+
+scissorsButton.addEventListener('click', (e) => {
+  playerChoice = e.currentTarget.value;
+  computerChoice = getComputerChoice();
+  playRound(computerChoice, playerChoice);
+  winner();
+})
